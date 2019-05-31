@@ -1,0 +1,14 @@
+<!-- Rakshit sample app -->
+<nav>
+  <a [routerLink]="['/']" class="btn naviBtn" #naviBtn role="button" id="homeBtn" (click)="setLayout($event)"
+    routerLinkActive="">Home</a>
+  <a [routerLink]="['/1st']" class="btn naviBtn" #naviBtn role="button" id="firstBtn" (click)="setLayout($event)"
+    routerLinkActive="">Customer-Inputs</a>
+  <a [routerLink]="['/2nd']" class="btn naviBtn" #naviBtn role="button" id="secBtn" (click)="setLayout($event)"
+    routerLinkActive="">Customer-Records</a>
+</nav>
+<div style="text-align:center">
+  <h3> Env-variables: {{title}} ! </h3>
+  <div>Please visit the different Nav-tabs to view the different implementations in Angular-6</div>
+</div>
+<router-outlet></router-outlet>

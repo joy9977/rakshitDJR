@@ -1,0 +1,23 @@
+<!-- Rakshit sample app -->
+<div>
+  <div class="raxHighlightCls">Using Sevice <span class="smallTxt">(to Exchange Data among Components)</span>: Click on
+    "View Info"</div>
+  <h1 class="text-center">Customer Records Database</h1>
+  <br />
+  <table class="table table-striped main-table">
+    <tr>
+      <th class="text-center">First Name</th>
+      <th class="text-center">Last Name</th>
+      <th class="text-center">Age</th>
+      <th class="text-center">Details</th>
+    </tr>
+    <tr *ngFor="let cust of customers">
+      <td class="text-center">{{cust.firstName}}</td>
+      <td class="text-center">{{cust.lastName}}</td>
+      <td class="text-center">{{cust.age}}</td>
+      <td class="text-center"><a class="btn btn-default btn-primary" role="button" (click)="viewInfoClick($event)"
+          id="{{cust.slug}}" title="View-Info">View Info</a></td>
+    </tr>
+  </table>
+</div>
+<info-component></info-component>

@@ -1,0 +1,12 @@
+.raxHighlightCls {
+  background-color: gold;
+  padding-left: 6px;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.smallTxt {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {}

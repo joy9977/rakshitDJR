@@ -1,0 +1,28 @@
+<div class="info" *ngIf="customerSlug != ''">
+  <h1 class="text-center">{{customerSlug | uppercase }}'s Record</h1>
+  <br />
+  <table class="table table-bordered secondary-table">
+    <tr>
+      <th class="text-center setwidth">First Name</th>
+      <th class="text-center setwidth">Last Name</th>
+      <th class="text-center setwidth">Age</th>
+      <th class="text-center setwidth">Company</th>
+      <th class="text-center setwidth">Gender</th>
+      <th class="text-center setwidth">Customer ID</th>
+      <th class="text-center setwidth">Country</th>
+      <th class="text-center setwidth">State</th>
+    </tr>
+    <tr *ngFor="let cust of custObj">
+      <td class="text-center">{{cust.firstName}}</td>
+      <td class="text-center">{{cust.lastName}}</td>
+      <td class="text-center">{{cust.age}}</td>
+      <td class="text-center">{{cust.company}}</td>
+      <td class="text-center">{{cust.gender}}</td>
+      <td class="text-center">{{cust.custID}}</td>
+      <td class="text-center">{{cust.country}}</td>
+      <td class="text-center">{{cust.statee}}</td>
+    </tr>
+  </table>
+  <br />
+  <br /><br />
+</div>

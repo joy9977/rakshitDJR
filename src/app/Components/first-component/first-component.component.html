@@ -1,0 +1,33 @@
+<!-- Rakshit sample app -->
+<div>
+  <div>
+    <textarea placeholder="Remove spaces from text using Filter" [(ngModel)]="selectedComments"
+      (ngModelChange)="selectedTxtchange($event)" (appOnInit)="someFunct()">
+    </textarea>
+    <span>&nbsp;</span>
+    <span>Formatted text: {{selectedComments | removeSpaces}}</span>
+  </div>
+  <br />
+  <div>
+    <div class="raxHighlightCls">Using HTTP-Sevice <span class="smallTxt">(to fetch Data)</span>; Directive <span
+        class="smallTxt">(appOnInit)</span>; Filter; Observable;
+      Interceptor <span class="smallTxt">(to Modify the Request/Response, and Error-handling)</span>
+    </div>
+    <table class="table table-bordered secondary-table">
+      <tr>
+        <th class="text-center setwidth">ID</th>
+        <th class="text-center setwidth">Name</th>
+        <th class="text-center setwidth">UserName</th>
+        <th class="text-center setwidth">Email</th>
+        <th class="text-center setwidth">City</th>
+      </tr>
+      <tr *ngFor="let prod of products">
+        <td class="text-center">{{prod.id}}</td>
+        <td class="text-center">{{prod.name}}</td>
+        <td class="text-center">{{prod.username}}</td>
+        <td class="text-center">{{prod.email}}</td>
+        <td class="text-center">{{prod.address.city}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

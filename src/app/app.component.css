@@ -1,0 +1,17 @@
+[hidden] {
+  display: none !important;
+}
+
+.naviBtn {
+  font-weight: bold;
+  text-decoration: underline overline;
+  font-size: 18px;
+  background-color: lightgrey;
+  margin: 0 6px 0 6px;
+}
+
+.setwidth {
+  width: 12%;
+}
+
+@media only screen and (max-width: 600px) {}
